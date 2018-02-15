@@ -1,0 +1,29 @@
+body{
+    width: 100%;
+}
+.wrapper{
+    margin: auto;
+    height: 700px;
+    max-width: 960px;
+    display: flex;
+    border: 2px solid blue;
+    align-items: center;
+    justify-content: space-around;  
+    flex-wrap: wrap;
+}
+
+.box {
+    
+    width: 200px;
+    height: 50%;
+    border: 2px solid red;
+    justify-content: space-around;
+}
+.box p{
+    text-align: center;
+}
+@media screen and (min-width: 700px) {
+     .box{
+      background-color: gray;
+    }
+  }
