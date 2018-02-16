@@ -8,6 +8,7 @@ const ulTodos = document
 const checkedTodos = document
     .getElementById('checkedTodos');
 
+
 // Add New Todo From Input
 button_NewTodo.addEventListener('click', function(){
     const newTodoFromInput = input.value;
@@ -15,13 +16,24 @@ button_NewTodo.addEventListener('click', function(){
     newListItem.textContent = newTodoFromInput;
     ulTodos.appendChild(newListItem);
 
+    //Add Butten To TodoList
     const checkedButton = document.createElement('button');
-    checkedButton.textContent = 'Checked';
-    newListItem.appendChild(checkedButton);
-    
-     
-    
+        checkedButton.textContent = 'Checked';
+        newListItem.appendChild(checkedButton);
+
+    //Move Item From "My Todos" to "My Checked ToDos"
+    checkedButton.addEventListener('click', function(){  
+        ulTodos.removeChild(newListItem);
+        checkedButton.textContent = 'Delete Item';
+        checkedTodos.appendChild(newListItem);        
+    })
+      
+
 });
+
+
+
+
 
 
 
