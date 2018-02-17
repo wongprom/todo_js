@@ -18,44 +18,22 @@ button_NewTodo.addEventListener('click', function(){
 
     //Add Butten To TodoList
     const checkedButton = document.createElement('button');
-        checkedButton.textContent = 'Checked';
-        newListItem.appendChild(checkedButton);
+    checkedButton.textContent = 'Checked';
+    newListItem.appendChild(checkedButton);
 
     //Move Item From "My Todos" to "My Checked ToDos"
     checkedButton.addEventListener('click', function(){  
         ulTodos.removeChild(newListItem);
         checkedButton.textContent = 'Delete Item';
-        checkedTodos.appendChild(newListItem);        
-    })
-      
+        checkedTodos.appendChild(newListItem);  
+            
+    });
+
+    //Remove Item From Checked Todos
+        
+    checkedButton.addEventListener('click', function(){
+        checkedTodos.removeChild(newListItem);
+    });
 
 });
 
-
-
-
-
-
-
-
-
-/*
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>List</title>
-</head>
-<body>
-    <ul id="todo">
-        <li>Köpa mjölk</li>
-        <li>Lära mig JavaScript</li>
-        <li>Leka med DOMen</li>
-        <li>DOOMSDAY</li>
-    </ul> 
-    <ul id="done">
-        
-    </ul>
-</body>
-</html>
-*/
