@@ -1,9 +1,15 @@
 
+/*Classes For Styling*/
+.textAlignCenter{
+    text-align: center;
+}
+
+
 body{
     width: 100%;
 }
 .wrapper{
-    margin: auto;
+    margin: 20px auto;
     height: 700px;
     max-width: 960px;
     display: flex;
