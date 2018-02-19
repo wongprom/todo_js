@@ -4,6 +4,13 @@
     text-align: center;
 }
 
+header{
+    background-color: wheat;
+    border-bottom-left-radius: 15%;
+    border-bottom-right-radius: 15%;
+}
+
+
 
 body{
     width: 100%;
@@ -20,6 +27,14 @@ body{
     margin-bottom: 0px;
 }
 
+#input{
+    margin:1em auto;
+    height: 3em;
+    width: 20em;
+}
+#button_NewTodo{
+    margin-bottom:1em;
+}
 
 .wrapper_box{
     width: 45%;
