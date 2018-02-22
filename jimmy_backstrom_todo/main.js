@@ -7,28 +7,21 @@ const ulTodos = document
 const checkedTodos = document
     .getElementById('checkedTodos');
 
-
-
-
-
-
 // Add New Todo From Input
 button_NewTodo.addEventListener('click', function () {
     const newTodoFromInput = input.value;
+    input.value = "";
     const newListItem = document.createElement('li');
     newListItem.textContent = newTodoFromInput;
+
     ulTodos.appendChild(newListItem);
-
-
-
-
-
-
 
 
     //Add Butten To TodoList
     const checkedButton = document.createElement('button');
     checkedButton.textContent = 'Checked';
+    checkedButton.style.backgroundColor = 'rgb(255, 230, 59)';
+    checkedButton.style.marginLeft = '5px';
     newListItem.appendChild(checkedButton);
 
 
@@ -39,6 +32,8 @@ button_NewTodo.addEventListener('click', function () {
 
         const deleteButton = document.createElement('button');
         deleteButton.textContent = 'Delete Item';
+        deleteButton.style.backgroundColor = 'rgb(207, 83, 0)';
+        deleteButton.style.marginLeft = '5px';
         newListItem.appendChild(deleteButton);
 
 
@@ -46,9 +41,10 @@ button_NewTodo.addEventListener('click', function () {
         //*if statment checks if there alLready a button because I onley want one button
         if (document.getElementById('deleteButtonAllTodos') === null) {
             const deleteButtonAllTodos = document.createElement('button');
-            deleteButtonAllTodos.textContent = 'Delete All ToDos';
+            deleteButtonAllTodos.textContent = 'Delete All Items';
             deleteButtonAllTodos.setAttribute('id', 'deleteButtonAllTodos');
             deleteButtonAllTodos.style.alignSelf = 'center';
+            deleteButtonAllTodos.style.backgroundColor = 'red';
             checkedTodos.parentElement.appendChild(deleteButtonAllTodos);
 
             deleteButtonAllTodos.addEventListener('click', deleteAllTodos);
@@ -60,9 +56,9 @@ button_NewTodo.addEventListener('click', function () {
 
     });
 
-}); //sist i coden
+});
 
-
+// try to get function out of functions
 function deleteListItem(itemToRemove) {
     checkedTodos.removeChild(itemToRemove);
 }
@@ -70,8 +66,3 @@ function deleteListItem(itemToRemove) {
 function deleteAllTodos() {
     checkedTodos.innerHTML = '';
 }
-
-
-
-
-

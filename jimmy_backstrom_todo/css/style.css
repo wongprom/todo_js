@@ -8,15 +8,25 @@ li{
 }
 
 header{
+
     width: 100%;
     height: 100%;
-      
+    background-image: url("../images/chalkBoard.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom-left-radius: 15%;  
+    border-bottom-right-radius: 15%;
+    color: whitesmoke;
+
 }
 
 body{
     height: 100%;
     width: 100%;
-    background-image: url("pens.jpeg");
+    background-image: url("../images/body_floor.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
 .wrapper{
     margin: 20px auto;
@@ -25,8 +35,9 @@ body{
     align-items: center;
     justify-content: space-around;  
     flex-wrap: wrap;
-    margin-bottom: 0px;
-    
+    background-image: url("../images/wrapper_desk.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover; 
 }
 
 #input{
@@ -35,9 +46,13 @@ body{
     width: 20em;
     
 }
+
 #button_NewTodo{
-    margin-bottom:1em;  
+    margin-bottom:1em; 
+    background-color: rgb(2, 137, 16);
 }
+
+
 
 .wrapper_box{
     min-width: 30%;
@@ -47,16 +62,25 @@ body{
     text-align: center;
     height: 500px;
     margin: 3em;
+    background-image: url("../images/paper_todods.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 footer{
+    max-height: 50%;
     width: 100%;
-    border: 2px solid green; 
+    border: 2px solid green;
+    background-image: url("../images/chalkBoard.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 15%;  
+    border-top-right-radius: 15%;
 }
+
 .footer_box{
     text-align: center;
-    border: 1px solid rebeccapurple;
-    background-color: purple;
+    
     color: whitesmoke;   
 }
 
@@ -67,15 +91,16 @@ footer .socialIcons a{
 footer p{
     padding:0 1em;
 }
+
 .footer_box:nth-child(2){
     margin: 2em 0 2em 0;
 }
+
 .socialIcons{
     font-size: 4em;
     display: flex;
     justify-content:space-around;    
 }
-
 
   @media screen and (min-width: 600px) {
       
