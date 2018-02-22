@@ -16,6 +16,7 @@ header{
 body{
     height: 100%;
     width: 100%;
+    background-image: url("pens.jpeg");
 }
 .wrapper{
     margin: 20px auto;
@@ -45,10 +46,7 @@ body{
     justify-content: space-around;
     text-align: center;
     height: 500px;
-   margin: 3em;
-}
-.wrapper_box p{
-    
+    margin: 3em;
 }
 
 footer{
@@ -80,10 +78,7 @@ footer p{
 
 
   @media screen and (min-width: 600px) {
-      body{
-          background-color: greenyellow;
-      }
-
+      
       .wrapper{
           display: flex;
       }
