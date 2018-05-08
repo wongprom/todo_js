@@ -2,7 +2,6 @@
 ToDo List With JavaScript
 
 ## Maker
-
 Jimmy Backstrom
 
 FrameWorks: Bootstrap, FontAwesome
