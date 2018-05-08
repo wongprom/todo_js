@@ -1,7 +1,8 @@
 # todo_js
 ToDo List With JavaScript
 
-##Maker 
+## Maker
+
 Jimmy Backstrom
 
 FrameWorks: Bootstrap, FontAwesome
